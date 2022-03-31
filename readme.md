@@ -8,8 +8,20 @@
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
   <a href="https://www.linkedin.com/in/tmz81/" target="_blank">
-    <img alt="Twitter: maykbrito" src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue" />
+    <img alt="Linkedin: tmz81" src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue" />
   </a>
 </p>
 
 >A small browser window
+
+# 🏃 How to you run app?
+
+Open terminal in Visual Studio Code
+
+```bash
+yarn
+
+&
+
+yarn start
+```
