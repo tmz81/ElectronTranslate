@@ -6,9 +6,13 @@ const createWindow = () => {
     height: 390,
     frame: false,
     resizable: false,
+    webPreferences: {
+      nodeIntegration: true,
+      preload: `${__dirname}/script.js`
+    }
   })
 
-  window.loadURL('https://translate.google.com.br/?hl=pt-BR')
+  window.loadURL('https://translate.google.com.br/?hl=pt-BR&sl=en&tl=pt&op=translate')
 }
 
 app.whenReady().then(createWindow)
