@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require('electron');
+const address = require('./address');
 
 const createWindow = () => {
   const window = new BrowserWindow({
@@ -9,10 +10,10 @@ const createWindow = () => {
     webPreferences: {
       nodeIntegration: true,
       preload: `${__dirname}/script.js`
-    }
+    },
   })
 
-  window.loadURL('https://translate.google.com.br/?hl=pt-BR&sl=en&tl=pt&op=translate')
+  window.loadURL(address.url)
 }
 
 app.whenReady().then(createWindow)
